@@ -4,6 +4,8 @@ An interactive research tool for exploring whether alternative data signals have
 
 Instead of treating quant finance as a black box, Basis walks you through the full workflow: construct a signal, test it against forward returns, evaluate statistical significance, and understand why it works (or doesn't).
 
+Try it out! https://basis-nu.vercel.app/
+
 ---
 
 ## Getting started
