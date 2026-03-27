@@ -1,0 +1,74 @@
+.signal-transparency {
+  margin: 8px 0 12px;
+}
+
+.transparency-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.transparency-toggle:hover {
+  color: var(--text);
+  border: none;
+}
+
+.toggle-rule {
+  color: var(--rule);
+  flex-shrink: 0;
+}
+
+.toggle-rule-after {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.toggle-arrow {
+  font-size: 9px;
+  flex-shrink: 0;
+}
+
+.transparency-body {
+  margin-top: 16px;
+  padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.transparency-row {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.transparency-label {
+  color: var(--muted);
+  min-width: 160px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.transparency-value {
+  color: var(--text);
+}
+
+.transparency-value-italic {
+  font-style: italic;
+  color: var(--green);
+  opacity: 0.85;
+}
+
+.transparency-intuition {
+  margin-top: 10px;
+}

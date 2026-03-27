@@ -1,0 +1,14 @@
+.quintile-chart {
+  padding: 8px 0;
+}
+
+.quintile-chart svg {
+  display: block;
+}
+
+.quintile-note {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 8px;
+  font-style: italic;
+}

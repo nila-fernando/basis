@@ -1,0 +1,48 @@
+.insight-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.insight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.insight-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.insight-symbol {
+  flex-shrink: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.insight-text {
+  color: var(--text);
+}
+
+.explainer-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.explainer-link {
+  font-size: 11px;
+  color: var(--muted);
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.explainer-link:hover {
+  color: var(--green);
+  border: none;
+}

@@ -1,0 +1,13 @@
+.scatter-plot {
+  width: 100%;
+}
+
+.scatter-ascii {
+  font-family: var(--font);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre;
+}

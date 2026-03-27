@@ -1,0 +1,60 @@
+.metric-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metric-summary {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.metric-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: lowercase;
+  position: relative;
+}
+
+.metric-has-tooltip {
+  cursor: default;
+}
+
+.metric-tooltip {
+  display: none;
+  font-size: 10px;
+  color: var(--green);
+  opacity: 0.75;
+  line-height: 1.4;
+  margin-top: 2px;
+  font-style: normal;
+  text-transform: none;
+}
+
+.metric-has-tooltip:hover .metric-tooltip {
+  display: block;
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metric-sub {
+  font-size: 11px;
+  color: var(--muted);
+}

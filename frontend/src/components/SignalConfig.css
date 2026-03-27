@@ -1,0 +1,87 @@
+.signal-config-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.config-rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.config-rule-dash {
+  color: var(--rule);
+  flex-shrink: 0;
+}
+
+.config-rule-line {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.config-fields {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.config-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.config-field label {
+  color: var(--muted);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.config-field input {
+  font-family: var(--font);
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 7px 12px;
+  min-width: 180px;
+}
+
+.config-field input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.subreddit-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.subreddit-toggle button {
+  font-size: 11px;
+  padding: 6px 12px;
+}
+
+.config-hint {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hint-line {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: italic;
+}
+
+.hint-tip {
+  color: var(--green);
+  opacity: 0.6;
+}

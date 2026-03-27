@@ -1,0 +1,25 @@
+.decay-chart {
+  width: 100%;
+}
+
+.ascii-chart {
+  font-family: var(--font);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text);
+  margin: 0;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.decay-green {
+  color: var(--green);
+}
+
+.decay-amber {
+  color: var(--amber);
+}
+
+.decay-red {
+  color: var(--red);
+}

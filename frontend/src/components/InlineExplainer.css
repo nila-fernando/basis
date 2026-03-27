@@ -1,0 +1,21 @@
+.inline-explainer {
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+
+.explainer-title {
+  display: block;
+  font-size: 11px;
+  color: var(--green);
+  margin-bottom: 6px;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.explainer-body {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.6;
+  opacity: 0.85;
+}
