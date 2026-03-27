@@ -7,6 +7,8 @@ import ScatterPlot from '../components/ScatterPlot'
 import InsightPanel from '../components/InsightPanel'
 import './Research.css'
 
+const API_BASE = import.meta.env.VITE_API_URL || ''
+
 const SIGNALS = [
   { id: 'trends_7d', label: 'google trends 7d' },
   { id: 'trends_30d', label: 'google trends 30d' },
@@ -74,14 +76,18 @@ export default function Research() {
       }
       if (isWiki) body.wiki_page = config.wikiPage
 
-      const res = await fetch('/api/backtest', {
+      const res = await fetch(`${API_BASE}/api/backtest`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       })
       if (!res.ok) {
-        const err = await res.json()
-        throw new Error(err.detail || 'Backtest failed')
+        let detail = 'Backtest failed'
+        try {
+          const err = await res.json()
+          detail = err.detail || detail
+        } catch (_) {}
+        throw new Error(detail)
       }
       const data = await res.json()
       runCount.current += 1
