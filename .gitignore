@@ -1,3 +1,16 @@
+# Claude
 .claude
 
-../frontend/node_modules
+# Frontend
+frontend/node_modules
+frontend/dist
+
+# Backend
+backend/venv
+backend/__pycache__
+backend/*.pyc
+backend/basis_cache.db
+
+# Environment
+.env
+.env.local
